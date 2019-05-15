@@ -140,7 +140,7 @@ to SecondVikingWarEvent:
 	else:
 		say "     Fearing an attack from the Vikings on the gym you make your way there, being concerned for the people in there, probably exercising and working out. So, once you get to the large building housing most of the equipment you make your way on in, taking into account the area you have to work with. As far as you can see there are plenty of students here which makes it a tad bit hard to defend alone. Thankfully though you can see a few Spartans placed at certain points in the gymnasium. Beyond that however, you can see dumbbells also littered about, giving you an idea.";
 		say "     Walking around a bit you get a layout of the place, not wanting to be completely caught unawares of any hidden entrances they could come in from. However, before you can fully get a grip on the place you hear shouts and screams from the outside of the gym. Turning around, you see male and female vikings pushing back some students with the blunt of their blades at the entrance of the gym. Seeing the Spartans charge forward to assist you think about the idea you had but wonder if you can implement it.";
-		let bonus be (( strength of player minus 10 ) divided by 2);
+		let bonus be (( strength of Player minus 10 ) divided by 2);
 		let diceroll be a random number from 1 to 20;
 		say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2]15[roman type] (Strength Check):[line break]";
 		if diceroll + bonus >= 15:
@@ -197,7 +197,7 @@ to ThirdVikingWarEvent:
 		now Siege Of The Belltower is active;
 	else:
 		say "     Deciding that you might want to head to the fountain before the Vikings attack, you make your way there, getting to it in no time. Once at the location you hum and think that you might have some time before the Vikings attack but you're not entirely sure as to what you could do though. Looking around you see a few trees and the burned patches of grass from the arrows that had to have been launched from outside. Taking a closer peak you see that the dirt is overturned, as if you could possibly hide something there. That, combined with the trees gives you an idea, one that causes you to move forward and walk around the area.";
-		let bonus be (( intelligence of player minus 10 ) divided by 2);
+		let bonus be (( intelligence of Player minus 10 ) divided by 2);
 		let diceroll be a random number from 1 to 20;
 		say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2]15[roman type] (Intelligence Check):[line break]";
 		if diceroll + bonus >= 15:
@@ -210,6 +210,7 @@ to ThirdVikingWarEvent:
 			now Resolution of Raid On The Fountain is 2; [won through intelligence]
 			now Siege Of The Belltower is active;
 			now VikingWar is turns;
+			now VikingSpartanWar is 3;
 		else:
 			say "     After figuring out that your plan is plausible you talk to the various students around the fountain and ask them to come with you to the equipment storage room on Athletic Street. You barely manage to convince some of the students with your plan, who shrug and follow you. You lead them there and request that half of them gather as much rope and volleyball nets as they can while you head off to Creative Street to see if you can't find anything for the ground. When you do get there with the rest of the people and ask around thankfully it turns out there is something you could work with. The beginning sculpting class had been making tiny balls that would be able to act like marbles. However, there doesn't seem to be a lot there so you can only grab enough to kit out half of you present.";
 			say "     When you guys get there you see that the ones who were left at the equipment storage room appear to have known what you wanted as they have started to make tree net traps, though they don't appear to be greatly made at all. Nodding at all of them you gesture to the ones with the marble-like objects to move to the overturned dirt. Once there you place some of them on the ground and hide them but not-so much that if someone to step on them that they wouldn't slip. It takes all of you a good twenty to thirty minutes but you manage to set everything up in a good enough time, at least you hope you did.";
@@ -260,7 +261,7 @@ to FourthVikingWarEvent:
 	else:
 		say "     Noticing that it's been a while since the battle at the fountain you decide you should make your way to the belltower before the Vikings get there. When you do arrive at your desired location you notice that there's not many people present, so it brings up the thought as to why the Vikings would want to attack such a place. You muse to yourself for a few seconds before thinking that maybe it's because it is the tallest building on the campus which would allow them quite the overlook on any targets that come this way. Drawing your inner tidings away from that, you wonder how you're going to defend this place, as it is quite open.";
 		say "     You first think about doing what had happened before in at the fountain, but quickly toss that idea into the trash. There was nothing to hide any traps you could set up and you're pretty sure that any ammunition for said inconveniences was already used earlier. Looking around once more you bring your eyes to the belltower itself where an idea comes to your mind rather quickly. You did have a similar thought to this earlier... and it wouldn't be that hard to accomplish if you wanted to. You're also pretty sure that students do leave things up there so you won't be out of ammo.";
-		let bonus be (( dexterity of player minus 10 ) divided by 2);
+		let bonus be (( dexterity of Player minus 10 ) divided by 2);
 		let diceroll be a random number from 1 to 20;
 		say "You roll 1d20([diceroll])+[bonus] = [special-style-1][diceroll + bonus][roman type] vs [special-style-2]15[roman type] (Dexterity Check):[line break]";
 		if diceroll + bonus >= 15:
@@ -272,6 +273,7 @@ to FourthVikingWarEvent:
 			now Resolution of Siege of The Belltower is 2; [won through dexterity]
 			now Siege of The Belltower is resolved;
 			now Battle For Tenvale Campus is active;
+			now VikingSpartanWar is 4;
 		else:
 			say "     Making a decision on what to do, you quickly head towards the door of the belltower, opening it and heading on in. However, as you do this you hear the sound of a lot of people heading your way. You try your best to make it up the tower in time, before they can catch you. When you reach the top you spot a large amount of textbooks and basketballs probably leftover from the many students that like to hang out up here. Hurriedly grabbing one you look at one Viking and chuck it at them. However, to your horror and shock she dodges and smirks at you as they get closer and nearer to the entrance.";
 			say "     You repeatedly attempt to toss books and basketballs at them but your lack of aim and dexterity appears to hinder you, as you only hit a few of them, grazing them at best. Panicking you try the next idea which is letting a bunch of the basketballs roll down the stairs as they come up, which only really knocks down a few of them. However, relief comes to you when Spartans arrive and start attacking them. It's a tough battle for them since the Vikings do have a defensible position and they do lose some people but in the end they win. One of them trudges up the stairs and with weary breath informs you that the final battle is going to occur in about an hour, as Pericles has finished the final preparations for his plan. You nod and let him go before you too head on your way.";
@@ -313,7 +315,7 @@ to FifthVikingWarEvent:
 	say "     [bold type]Do you take the blow for Bjorn?[roman type][line break]";
 	say "     [link](y)[as]y[end link] - Yes, save Pericles from his attempt at saving Bjorn.";
 	say "     [link](n)[as]n[end link] - No, you'd rather not harm his honor.";
-	if player consents:
+	if Player consents:
 		say "     Sighing and dashing forward you hurriedly shove Bjorn out of the way. As soon as you do this, you feel a blade come down on your side, searing pain following. Grunting and falling to the ground you hear the Viking who hit you also fall to the ground. 'Are you okay?!' Bjorn's voice shouts as he helps you up from the ground. Letting out a groan as the nanites begin to slowly stitch your skin back together, which you'll forever be thankful for as healing the slow way would be a pain in the ass. As you look over to where Pericles is, you see that he has an angry look on his face and he readies his sword before dashing forward at the remaining enemies.";
 		say "     What you end up witnessing could be compared to nothing less than a massacre, just with unconscious bodies. The Spartan-Helot charges from enemy to enemy and incapacitates them, moving with the grace of a dancer, making you think that if he wasn't wearing the armor it'd be hard to think of him as a Spartan, though he does take hits, causing pieces of his armor to come off. It doesn't take long before most if not all of the Vikings are on the ground. Once this is done, Pericles stands tall and glares at all of them before speaking. 'You all will surrender and sign a peace treaty with us, is that clear?' he asks coldly, his tone booking no argument. The one seemingly leading all the Norse warriors reluctantly nods at the practical order.";
 		WaitLineBreak;
@@ -383,7 +385,7 @@ to say PericlesBjornSexMenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
-	if cocks of player > 0 and cunts of player < 1:
+	if Cock Count of Player > 0 and Cunt Count of Player < 1:
 		choose a blank row in table of fucking options;
 		now title entry is "Fuck the Viking's Mouth";
 		now sortorder entry is 1;
@@ -401,7 +403,7 @@ to say PericlesBjornSexMenu:
 			now current menu selection is calcnumber;
 			choose row calcnumber in table of fucking options;
 			say "[title entry]: [description entry]?";
-			if player consents:
+			if Player consents:
 				let nam be title entry;
 				now sextablerun is 1;
 				if (nam is "Fuck the Viking's Mouth"):
@@ -417,10 +419,10 @@ to say PericlesBjornSexMenu:
 
 to say BjornPericlesSex1:
 	say "     With your mind set you move to your Viking friend and with a smile push him down onto his knees. This puts a smirk on Pericles['] face as he chuckles. 'So, that's what you're going for?' he asks, stepping up to Bjorn as well but repositioning him so that he's on all fours. He then takes that opportunity to grope at the Norse male's ass. You on the other hand pull his face towards your clothed crotch which he promptly nuzzles. Inwardly you muse that he's grown rather submissive compared to when you first met him. Though if you're honest, it probably has to do with the Spartan-Helot being the much more dominant personality. Deciding to assist him, remove the clothing covering your lower half, revealing your crotch from behind its prison.";
-	say "     Moving it along rather quickly, Bjorn takes the tip of [if cocks of player > 1]one of your cocks[else]your cock[end if] into his mouth and begins to suck on it, causing you to let out a moan. Pericles on the other hand moves his hands to the waistband of the Norse warrior's leather pants and slowly pulls them down, revealing his well-toned ass. Once that's done, the buff Greek male pulls on a pin that seems placed at his shoulder and the toga appears to fall apart, revealing a tunic underneath. Easily pulling off the cloth, your friend is now naked with his hard cock positioned at the Viking's hole. Lathering it up with a little bit of saliva, he then starts pushing in, causing Bjorn to grunt out loud while his mouth's on your cock.";
+	say "     Moving it along rather quickly, Bjorn takes the tip of [if Cock Count of Player > 1]one of your cocks[else]your cock[end if] into his mouth and begins to suck on it, causing you to let out a moan. Pericles on the other hand moves his hands to the waistband of the Norse warrior's leather pants and slowly pulls them down, revealing his well-toned ass. Once that's done, the buff Greek male pulls on a pin that seems placed at his shoulder and the toga appears to fall apart, revealing a tunic underneath. Easily pulling off the cloth, your friend is now naked with his hard cock positioned at the Viking's hole. Lathering it up with a little bit of saliva, he then starts pushing in, causing Bjorn to grunt out loud while his mouth's on your cock.";
 	WaitLineBreak;
 	say "     Getting into a nice pace, Pericles begins to eagerly fuck your seafaring friend which gives you a pleasurable idea. Grabbing ahold of the Viking's hair you pull him down further onto your dick, fully sheathing it in his mouth. Shortly after you proceed to facefuck him, timing your thrusts into his oral cavity with the Spartan-Helot's own into the male's hole, the two of you now roughly spitroasting him. Surprisingly Bjorn manages to deepthroat you rather well, though you're sure that your Greek friend has helped him learn. Speaking of Pericles, he appears to be thoroughly enjoying himself as he roughly abuses pushes in and out of his partner, balls slapping against ass cheeks as he goes.";
-	say "     'Fuck, you're always such a good lay Bjorn,' he groans, threading his hands into the male's hair, forcing you to release your grip, and pushing him back onto your cock. Seeing such an action sends a shiver through your body, letting you know that you aren't going to last much longer. So, deciding to give it your all you move your hands to the Viking's face and return to ravishing his mouth with your shaft, sloshing sounds coming from it as your dick goes in and out. Pericles appears to take this as a hint as he returns to eagerly fucking Bjorn's hole, his large manhood penetrating him repeatedly. It's not long after that you feel your balls clench as you reach your orgasm and cum[if cocks of player > 1], the load from your free cock spraying all over his back[end if].";
+	say "     'Fuck, you're always such a good lay Bjorn,' he groans, threading his hands into the male's hair, forcing you to release your grip, and pushing him back onto your cock. Seeing such an action sends a shiver through your body, letting you know that you aren't going to last much longer. So, deciding to give it your all you move your hands to the Viking's face and return to ravishing his mouth with your shaft, sloshing sounds coming from it as your dick goes in and out. Pericles appears to take this as a hint as he returns to eagerly fucking Bjorn's hole, his large manhood penetrating him repeatedly. It's not long after that you feel your balls clench as you reach your orgasm and cum[if Cock Count of Player > 1], the load from your free cock spraying all over his back[end if].";
 	WaitLineBreak;
 	say "     The Viking greedily swallows your seed as the male at the other end lets out a shout as he thrusts into Bjorn one last time before dumping his cum deep into him. After riding your climax out you pull out, as does Pericles, giving the Norse male a chance to stand up. Raising a brow at his partner's state, the Spartan-Helot puts on the tunic and gestures to the large sheet that was his toga. 'Do you mind helping me with this?' he asks, Bjorn nodding and smiling at him. Shrugging at their actions, you decide to leave them be and put your own clothes back on.";
 

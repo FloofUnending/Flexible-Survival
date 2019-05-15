@@ -24,6 +24,32 @@ object	name
 Gerty	"Gerty"
 
 Gerty is a man. The hp of Gerty is usually 0.
+[Physical details as of game start]
+ScaleValue of Gerty is 3. [human sized]
+SleepRhythm of Gerty is 0. [0 - awake at all times, 1 - day active, 2 - night active]
+Cock Count of Gerty is 1. [X cock]
+Cock Length of Gerty is 7. [X Inches]
+Ball Size of Gerty is 5.
+Ball Count of Gerty is 2. [X balls]
+Cunt Count of Gerty is 0. [X pussy]
+Cunt Length of Gerty is 0. [X Cunt]
+Cunt Tightness of Gerty is 0. [X Cunt]
+Nipple Count of Gerty is 0. [X nipples]
+Breast Size of Gerty is 0. [X at the start]
+[Basic Interaction states as of game start]
+TwistedCapacity of Gerty is false. [can not take oversized members without pain]
+Sterile of Gerty is true.
+PlayerMet of Gerty is false.
+PlayerRomanced of Gerty is false.
+PlayerFriended of Gerty is false.
+PlayerControlled of Gerty is false.
+PlayerFucked of Gerty is false.
+OralVirgin of Gerty is true.
+Virgin of Gerty is true.
+AnalVirgin of Gerty is true.
+PenileVirgin of Gerty is true.
+SexuallyExperienced of Gerty is false.
+MainInfection of Gerty is "".
 [Gerty will be moved to the Tenvale College Library through Kyle content]
 The description of Gerty is "[GertyDesc]".
 The conversation of Gerty is { "<This is nothing but a placeholder!>" }.
@@ -80,7 +106,7 @@ to say GertyTalkMenu:
 			now current menu selection is calcnumber;
 			choose row calcnumber in table of fucking options;
 			say "[title entry]: [description entry]?";
-			if player consents:
+			if Player consents:
 				let nam be title entry;
 				now sextablerun is 1;
 				if (nam is "Himself"):
@@ -138,7 +164,7 @@ to say GertySexMenu:
 	now sextablerun is 0;
 	blank out the whole of table of fucking options;
 	[]
-	if player is male: [only males and herms can get a blowjob]
+	if Player is male: [only males and herms can get a blowjob]
 		choose a blank row in table of fucking options;
 		now title entry is "Get a blowjob";
 		now sortorder entry is 1;
@@ -149,7 +175,7 @@ to say GertySexMenu:
 	now sortorder entry is 2;
 	now description entry is "Wrap your lips around the snakeman's ophidian shaft";
 	[]
-	[if player is male:
+	[if Player is male:
 		choose a blank row in table of fucking options;
 		now title entry is "Fuck the lizardman";
 		now sortorder entry is 3;
@@ -172,7 +198,7 @@ to say GertySexMenu:
 			now current menu selection is calcnumber;
 			choose row calcnumber in table of fucking options;
 			say "[title entry]: [description entry]?";
-			if player consents:
+			if Player consents:
 				let nam be title entry;
 				now sextablerun is 1;
 				if (nam is "Get a blowjob"):

@@ -56,7 +56,7 @@ to VariableSave:
 	blank out the whole of Table of GameNumberLists; [empty out all old data]
 	repeat with x running from 1 to the number of filled rows in the Table of GameVariableIDs:
 		choose row x in the Table of GameVariableIDs;
-		now CurrentVariableName is Name Entry;
+		now CurrentVariableName is Name entry;
 		if debugactive is 1:
 			say "Stashing variable [CurrentVariableName].";
 		if Type Entry is "text":
@@ -100,6 +100,8 @@ to TextVariableSave:
 	choose blank row in Table of GameTexts;
 	now TextVarName entry is CurrentVariableName;
 	if CurrentVariableName is:
+		-- "PronounChoice":
+			now TextVarValue entry is PronounChoice of Player;
 		-- "battleground":
 			now TextVarValue entry is battleground;
 		-- "bcfinalchairform":
@@ -122,16 +124,6 @@ to TextVariableSave:
 			now TextVarValue entry is BodyShopGuaranteedTail;
 		-- "ButterflyAttire":
 			now TextVarValue entry is ButterflyAttire;
-		-- "ButterflyBabyBodyName":
-			now TextVarValue entry is ButterflyBabyBodyName;
-		-- "ButterflyBabyCockName":
-			now TextVarValue entry is ButterflyBabyCockName;
-		-- "ButterflyBabyFaceName":
-			now TextVarValue entry is ButterflyBabyFaceName;
-		-- "ButterflyBabySkinName":
-			now TextVarValue entry is ButterflyBabySkinName;
-		-- "ButterflyBabyTailName":
-			now TextVarValue entry is ButterflyBabyTailName;
 		-- "ButterflyBreastDesc":
 			now TextVarValue entry is ButterflyBreastDesc;
 		-- "ButterflyTummy":
@@ -331,6 +323,8 @@ to NumberVariableSave:
 	choose blank row in Table of GameNumbers;
 	now NumberVarName entry is CurrentVariableName;
 	if CurrentVariableName is:
+		-- "featgained":
+			now NumberVarValue entry is featgained of Player;
 		-- "absorb":
 			now NumberVarValue entry is absorb;
 		-- "addedlibido":
@@ -2417,6 +2411,8 @@ to NumberVariableSave:
 			now NumberVarValue entry is scaledr;
 		-- "scopnum":
 			now NumberVarValue entry is scopnum;
+		-- "Score":
+			now NumberVarValue entry is Score;
 		-- "ScottyRelationship":
 			now NumberVarValue entry is ScottyRelationship;
 		-- "scufflecount":
@@ -3761,6 +3757,8 @@ to VariableTextLoad:
 			if debugactive is 1:
 				say "Restoring text [TextVarName entry].";
 			if TextVarName entry is:
+				-- "PronounChoice":
+					now PronounChoice of Player is TextVarValue entry;
 				-- "battleground":
 					now battleground is TextVarValue entry;
 				-- "bcfinalchairform":
@@ -3783,16 +3781,6 @@ to VariableTextLoad:
 					now BodyShopGuaranteedTail is TextVarValue entry;
 				-- "ButterflyAttire":
 					now ButterflyAttire is TextVarValue entry;
-				-- "ButterflyBabyBodyName":
-					now ButterflyBabyBodyName is TextVarValue entry;
-				-- "ButterflyBabyCockName":
-					now ButterflyBabyCockName is TextVarValue entry;
-				-- "ButterflyBabyFaceName":
-					now ButterflyBabyFaceName is TextVarValue entry;
-				-- "ButterflyBabySkinName":
-					now ButterflyBabySkinName is TextVarValue entry;
-				-- "ButterflyBabyTailName":
-					now ButterflyBabyTailName is TextVarValue entry;
 				-- "ButterflyBreastDesc":
 					now ButterflyBreastDesc is TextVarValue entry;
 				-- "ButterflyTummy":
@@ -4001,6 +3989,8 @@ to VariableNumberLoad:
 			if debugactive is 1:
 				say "Restoring Number [NumberVarName entry].";
 			if NumberVarName entry is:
+				-- "featgained":
+					now featgained of Player is numberVarValue entry;
 				-- "absorb":
 					now absorb is numberVarValue entry;
 				-- "addedlibido":
@@ -6085,6 +6075,8 @@ to VariableNumberLoad:
 					now scaledr is numberVarValue entry;
 				-- "scopnum":
 					now scopnum is numberVarValue entry;
+				-- "Score":
+					now Score is numberVarValue entry;
 				-- "ScottyRelationship":
 					now ScottyRelationship is numberVarValue entry;
 				-- "scufflecount":

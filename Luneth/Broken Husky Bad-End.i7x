@@ -194,7 +194,7 @@ to say BrokenHuskySlutBadend:
 	else:
 		LineBreak;
 		say "     Rubbing your hands along the inside of your thighs, you tell him that you would much prefer your treats from the source, all the while your eyes are locked onto his furry sheath. A sultry smile forms on his muzzle at your implications, along with a deep baritone chuckle showing that he obviously enjoys the idea of what's on offer. 'Really now? Well, normally I would definitely give a naughty li'l slut like you a treat, but there is a time and place for that, and right now, I want you to [']tell['] me just how grateful you are.' Wanting to see just how far you can push the alpha, you stay silent with a suggestive smirk on your lips. 'Haha, you are a cocky one, ain't ya? Well how about this, either you give me a proper thank you, or the only treat that you're gonna get is being tied to a post outside and at the mercy of every horny creature out there.' Through every word spoken, the canine retains a happy smile on his muzzle.";
-		say "     Your stomach decides to choose that exact moment to call out in hunger before you can say a word. Quickly, one of his huge paws reaches out, grabbing one of your flat pecs in a firm grip. 'Do you think that I can't tell that you're fucking hungry!? What, think I'm stupid or something? Jeez, here I am trying to teach you the proper way to act, and all ya can do is think with your cunt!' One of his sharp claws scrapes across your nipple, forcing out a hiss of both pain and pleasure from your mouth. 'See that's what I'm talkin['] about! All you had to do is say [']thank you, master['], like a good li'l bitch, but no, instead you think that it would be fun to try and play games while I'm tryin to train you!' Wrenching his paw away from your chest, you can't help but tremble in the face of his overwhelming rage.";
+		say "     Your stomach decides to choose that exact moment to call out in hunger before you can say a word. Quickly, one of his huge paws reaches out, grabbing one of your flat pecs in a firm grip. 'Do you think that I can't tell that you're fucking hungry!? What, think I'm stupid or something? Jeez, here I am trying to teach you the proper way to act, and all ya can do is think with your cunt!' One of his sharp claws scrapes across your nipple, forcing out a hiss of both pain and pleasure from your mouth. 'See that's what I'm talkin['] about! All you had to do is say [']thank you, master['], like a good li'l bitch, but no, instead you think that it would be fun to try and play games while I'm tryin['] to train you!' Wrenching his paw away from your chest, you can't help but tremble in the face of his overwhelming rage.";
 		decrease Brokenhuskygoodgirl by 1;
 		decrease Brokenhuskybadbitch by 1;
 		increase Brokenhuskysluttypuppy by 2;
@@ -307,7 +307,7 @@ to say BrokenHuskySlutBadend:
 			say "     With the enhanced hearing of your ears, you can make out movement on the other side of the door. Your head quickly whips up and you catch sight of something in the mirror in the dark room: your eyes... they are glowing! Luminescent violet orbs look back at you from your reflection, that is before the door flies open, blinding you with light. 'Well, well, what do ya know? It looks like I was right to choose ya for my plan after all, my li'l pet!'";
 			now Brokenhuskydelta is 3; [bimbo delta husky]
 	say "     <<End of Week 1>>  ";
-	now bodyname of player is "Broken Husky Slut";
+	now bodyname of Player is "Broken Husky Slut";
 	end the story saying "You'll never escape your fate!";
 
 Section 2 - Rough Roadmap

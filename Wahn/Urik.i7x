@@ -25,14 +25,14 @@ Urik	"Urik"
 
 Urik is a man.
 ScaleValue of Urik is 4.
-Cocks of Urik is 1.
+Cock Count of Urik is 1.
 Cock Length of Urik is 15.
-Cock Width of Urik is 11.
-Testes of Urik is 2.
-Cunts of Urik is 0.
+Ball Size of Urik is 4.
+Ball Count of Urik is 2.
+Cunt Count of Urik is 0.
 Cunt Length of Urik is 0.
-Cunt Width of Urik is 0.
-Breasts of Urik is 2. [2 nipples]
+Cunt Tightness of Urik is 0.
+Nipple Count of Urik is 2. [2 nipples]
 Breast Size of Urik is 0.
 TwistedCapacity of Urik is false.
 Sterile of Urik is false.
@@ -85,7 +85,7 @@ Instead of fucking Urik:
 			now sortorder entry is 2;
 			now description entry is "Get a blow-job";
 		[]
-		if player is female:
+		if Player is female:
 			choose a blank row in table of fucking options;
 			now title entry is "Let Urik fuck your pussy";
 			now sortorder entry is 3;
@@ -97,7 +97,7 @@ Instead of fucking Urik:
 			now sortorder entry is 4;
 			now description entry is "Let the orc warrior fill your ass with his seed";
 		]
-		if player is male:
+		if Player is male:
 			choose a blank row in table of fucking options;
 			now title entry is "Take Urik's ass";
 			now sortorder entry is 5;
@@ -114,8 +114,8 @@ Instead of fucking Urik:
 			if calcnumber > 0 and calcnumber <= the number of filled rows in table of fucking options:
 				now current menu selection is calcnumber;
 				choose row calcnumber in table of fucking options;
-				say "[bold type][title entry]: [description entry]?[roman type][line break]";
-				if player consents:
+				say "[title entry]: [description entry]?";
+				if Player consents:
 					let nam be title entry;
 					clear the screen and hyperlink list;
 					now sextablerun is 1;
@@ -231,7 +231,7 @@ instead of conversing Urik:
 			now current menu selection is calcnumber;
 			choose row calcnumber in table of fucking options;
 			say "[title entry]: [description entry]?";
-			if player consents:
+			if Player consents:
 				let nam be title entry;
 				clear the screen and hyperlink list;
 				now sextablerun is 1;
@@ -299,13 +299,13 @@ instead of navigating Grey Abbey Library while (Urik is in Sitting Area and Cand
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Sure. The furry boy-slut is grinning at you from his position over Urik's shoulder!";
 	say "     ([link]N[as]n[end link]) - Nope. Urik should get used to not being a free orc warrior anymore. You decide where and if he sticks his dick anywhere now!";
-	if player consents:
+	if Player consents:
 		LineBreak;
 		say "     [bold type]Do you want to go after them and watch?[roman type][line break]";
 		LineBreak;
 		say "     ([link]Y[as]y[end link]) - Yeah, looks like a good time.";
 		say "     ([link]N[as]n[end link]) - Nah, not right now.";
-		if player consents:
+		if Player consents:
 			LineBreak;
 			project the figure of Urik_naked_icon;
 			say "     Following Urik as he walks up the stairs, you face Candy on the way, who keeps smiling happily and making kissy faces at you. Soon, the three of you arrive at Urik's camp, with the orc kicking a few strewn-about possessions of his aside to walk up to the comfy sofa he claimed as his resting place. He pulls Candy off his shoulder and drops him on the cushions, then almost rips off his own loincloth, revealing the thick shaft of his orcish manhood. 'Oh wow, you really are a big boy all over,' Candy comments gleefully and sits up, reaching out to touch Urik's erection. The raccoon strokes it with both hands, prompting a satisfied grunt from Urik at being jerked off. Soon, a glistening drop of pre-cum forms at the tip of the orc's shaft.";
@@ -315,7 +315,7 @@ instead of navigating Grey Abbey Library while (Urik is in Sitting Area and Cand
 			say "     In that moment, the orc's expression wavers a little - losing some of his dominant grin and taking on an undertone of hunger and need. After all, he has been trained as a cum-slut by Boghrim himself... and now he acts on the urges that instilled in him. Strong hands slide under Candy's armpits and pick the anthro furry up in a sudden wrench, bringing his face to the same level as Urik's own. And just like that, the orc starts to make out with his partner, their tongues wrestling with one another as both strive to swallow as much of his tasty pre as they can. The antics of the two of them are quite fun to watch - a big green brute holding a girly-boy raccoon to his chest, both of them sporting erections. Candy's dick creates an especially nice image, as it pokes out under the rim of his short pink skirt.";
 			WaitLineBreak;
 			say "     Eventually, the cum-sluts seem to have used up all the orc pre, as Urik pulls back from snogging with Candy and looks the smaller guy in the eye. 'Time to fuck!' he announces gleefully and the raccoon gives a needy moan in reply. Looks like he's got a low resistance to the effects of Urik's pre... or just swallowed more while he was being face-fucked. No matter which, Candy now acts like a bitch in heat, churring while having his arms wrapped around the large male and rubbing up against his muscular chest. Meanwhile, Urik takes hold of his hard cock and rubs it between Candy's buns, then pushes the candy striper down on his erection. With a satisfied grunt (and a breathless gasp from Candy), the orc slides into his smaller partner, stretching his chute wide with the girth of his manhood.";
-			say "     Wound up as the two of them are, there is no hesitation, no slow 'getting used to' phase for their fucking - Candy grinds his ass down on Urik's cock before the orc even starts to thrust. The orc isn't dainty with his cock either, hammering Candy down on it till his balls slap the candy-striper's ass with a satisfying thud, then again and again in a rapid tempo. Oblivious to everything around them, the two men fuck fuck gleeful abandon, filling the library with moans, grunts and gasps in ever-increasing urgency. Before long, their breathless mating rises to a shouted climax, with Urik forcing his cock all the way into Candy's stretched hole and pumping blast after heavy blast of cum into him. At the same time, the lust-drunk raccoon comes too, splattering the rock-hard abs on Urik with his own load.";
+			say "     Wound up as the two of them are, there is no hesitation, no slow 'getting used to' phase for their fucking - Candy grinds his ass down on Urik's cock before the orc even starts to thrust. The orc isn't dainty with his cock either, hammering Candy down on it till his balls slap the candy-striper's ass with a satisfying thud, then again and again in a rapid tempo. Oblivious to everything around them, the two men fuck with gleeful abandon, filling the library with moans, grunts and gasps in ever-increasing urgency. Before long, their breathless mating rises to a shouted climax, with Urik forcing his cock all the way into Candy's stretched hole and pumping blast after heavy blast of cum into him. At the same time, the lust-drunk raccoon comes too, splattering the rock-hard abs on Urik with his own load.";
 			WaitLineBreak;
 			say "     For a little while, Urik stands still and just holds on to the limp raccoon in his arms, not moving a muscle - other than the ones in his crotch, as his balls keep twitching with another and another spurt of cum being delivered. 'You're one fine breeder to get off in,' he grunts in satisfaction as his orgasm slowly peters out. His partner does little but moan in a pleasantly blissed-out way in response - clearly riding the high that actual orc cum delivers in much greater potency than just Urik's pre-cum. And apparently, the big orc wants a slice of that too. The next thing that Urik does is sit down on the sofa, followed by tugging his fuck-toy off his half-hard erection and spinning Candy bodily around.";
 			say "     Holding the freshly-bred raccoon upside-down now, Urik puts his face between the furry globes of Candy's buttocks, pushing his tongue against the gay man's cum-slick pucker and eating him out. Hungrily slurping cum from his sex toy, Urik joins Candy in blissful delirium, with the two of them writhing against each other while riding their high. As most of the action seems to be over by now, you leave them at it and return to other matters, walking down the stairs to the library ground floor.";
